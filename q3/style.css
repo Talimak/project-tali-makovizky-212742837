@@ -1,0 +1,148 @@
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top:20px;
+}
+
+form.report-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width:90%;
+  max-width: 600px;
+  margin: auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.report-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #333;
+}
+
+button {
+  background: #442e94; 
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #1a0663; 
+}
+
+#messages {
+  margin-top: 20px;
+  max-width: 400px;
+}
+
+.error {
+  color: #c62828;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.success {
+  color: #2e7d32;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+#complaints {
+  max-width: 900px;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.complaint-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  width: 260px;
+}
+
+.complaint-card h4 {
+  margin: 5px 0;
+  color: #4b145b;
+}
+
+.complaint-card p {
+  margin: 3px 0;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.complaint-card button {
+  margin-top: 10px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.btn-delete {
+  background: #d32f2f;
+  color: #fff;
+}
+
+.btn-status {
+  background: #5e35b1;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+}
+
+.link a {
+  text-decoration: none;
+  border-radius: 8px;
+  background: green;
+  color: #fff;
+  padding: 10px 15px;
+  margin-bottom: 1rem;
+}
+
+.link a:hover {
+  background: rgb(2, 83, 2);
+}
+
+@media (max-width: 600px) {
+  .report-form {
+    width: 90%;
+  }
+
+  #complaints {
+    flex-direction: column;
+    align-items: center;
+  }
+}

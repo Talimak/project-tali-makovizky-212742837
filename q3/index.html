@@ -1,57 +1,61 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מערכת פיקוח על תיבות דואר מדברות</title>
     <link rel="stylesheet" href="style.css">
-    <title>קרקס רגשי</title>
-    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <h1>מערכת פיקוח על תיבות דואר מדברות </h1>
+    <h1>מערכת פיקוח על תיבות דואר מדברות</h1>
+
     <form id="reportForm" class="report-form">
-        <h2>טופס דיווח תיבת דואר</h2>
+        <label>מזהה תיבה (1-999): <input type="number" id="boxId"></label>
 
-        <label>מזהה תיבה (1-999): <input type="number" id="boxId" fdprocessedid="l51z89"></label>
-        <label>צבע תיבה:</label>
-        <input type="text" id="boxColor" required />
+        <label>צבע התיבה: <input type="text" id="boxColor"></label>
 
-        <label>כמות הדואר שהוזנה:</label>
-        <input type="number" id="mailAmount" min="1" required />
+        <label>טון דיבור:
+            <select id="tone">
+                <option value="">בחר טון</option>
+                <option value="רגזן">רגזן</option>
+                <option value="ממלכתי">ממלכתי</option>
+                <option value="נעים">נעים</option>
+            </select>
+        </label>
 
-        <label>טון דיבור:</label>
-        <select id="tone" required>
-            <option value="">בחר טון</option>
-            <option value="רגוע">רגזן</option>
-            <option value="ממלכתי">ממלכתי</option>
-            <option value="נעים">נעים</option>
-        </select>
+        <label>כמות דואר שהוזנה: <input type="number" id="mailCount"></label>
 
-        <label>האם התיבה נסגרה?</label>
-        <select id="isClosed" required>
-            <option value="">בחר</option>
-            <option value="true">כן</option>
-            <option value="false">לא</option>
-        </select>
+        <label>האם התיבה נסגרה?
+            <select id="isClosed">
+                <option value="">בחר</option>
+                <option value="true">כן</option>
+                <option value="false">לא</option>
+            </select>
+        </label>
 
-        <label>סוג המשתמש:</label>
-        <select id="userType" required>
-            <option value="">בחר סוג</option>
-            <option value="אדם">אדם</option>
-            <option value="חתול">חתול</option>
-            <option value="פיה">פיה</option>
-        </select>
 
-        <label>כתובת אימייל לאיתור:</label>
-        <input type="email" id="email" required />
+        <label>סוג המשתמש:
+            <select id="userType">
+                <option value="">בחר סוג</option>
+                <option value="אדם">אדם</option>
+                <option value="חתול">חתול</option>
+                <option value="פיה">פיה</option>
+            </select>
+        </label>
+
+        <label>כתובת אימייל: <input type="text" id="email"></label>
 
         <button type="submit">שלח דיווח</button>
     </form>
+
+    <div id="messages"></div>
+
+    <div class="link">
+        <a href="view.html">עבור לצפיה בכל התלונות</a>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
