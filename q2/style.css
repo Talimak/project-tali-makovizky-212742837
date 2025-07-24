@@ -20,6 +20,7 @@ header{
     position: fixed;
     text-align: center;
     top: 0;
+    left:0;
     color: #5d4d89;
     font-size: 1.5rem;
     font-weight:bold;
@@ -141,6 +142,11 @@ footer {
     align-items: center;
   }
 
+  header {
+      margin-right: 150px;
+      margin-bottom:2rem;
+  }
+
   .nav-bar {
     position: fixed;
     top: 0;
@@ -173,6 +179,11 @@ footer {
 
   .card {
     width: 100%;
+    margin-right: 150px;
+    margin-top: 2.2rem;
   }
 
+  footer{
+    margin-right:150px;
+  }
 }
